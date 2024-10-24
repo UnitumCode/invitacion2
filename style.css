@@ -1,0 +1,35 @@
+.container{
+    margin: auto;
+    margin-top: 10%;
+    
+
+
+}
+.content{
+    background-image: url(assets/bg1.jpg);
+    height: 640px;
+    width: 360px;
+    border: solid;
+    background-size:contain;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+body{
+    background: linear-gradient(45deg, #f5a7b4, #ffffff);
+    animation: gradientAnimation 2s ease infinite;
+    background-size: 200% 200%;
+}
